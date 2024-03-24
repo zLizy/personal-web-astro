@@ -169,19 +169,50 @@ const metadata = {
 
   <!-- Content Widget **************** -->
 
-  <Content
+
+  <Features3
     id="publications"
-    title="Elevating visual narratives"
-    subtitle="Embark on a design journey that surpasses pixels, entering a realm of imagination. Explore my portfolio, where passion and creativity converge to shape enthralling visual narratives."
-    isReversed
+    title="Publications"
+    columns={1}
+    defaultIcon="tabler:chevron-right"
     items={[
       {
-        title: 'Description:',
-        description:
-          'Developed a comprehensive brand identity for a tech startup, Tech Innovators, specializing in disruptive innovations. The goal was to convey a modern yet approachable image that resonated with both corporate clients and tech enthusiasts.',
+        callToAction: {
+          target: '_blank',
+          title: '',
+          href: 'amalur',
+          text: 'Amalur: Data Integration Meets Machine Learning',
+        },
+        paperurl: {
+          href: 'amalur',
+        },
+        blogurl: {
+          href: 'amalur',
+        },
+        description: 'Rihan Hai, Christos Koutras, Andra Ionescu, <strong>Ziyu Li</strong>, Wenbo Sun, Jessie van Schijndel, Yan Kang, Asterios Katsifodimos <br /> In Proceedings of the 2023 IEEE 39th International Conference on Data Engineering, ICDE 2023 p.3729-3739, IEEE .',
       },
-      ]}
-  >
+      {
+        title: 'Macaroni: Crawling and Enriching Metadata from Public Model Zoos',
+        description: '<strong>Ziyu Li</strong>, Rihan Hai, Asterios Katsifodimos, Alessandro Bozzon <br /> In International Conference on Web Engineering p.376-380. (2023) ',
+      },
+      {
+        title: 'Metadata Representations for Queryable Repositories of Machine Learning Models',
+        description: 'Ziyu Li, Henk Kant, Rihan Hai, Asterios Katsifodimos, Marco Brambilla, Alessandro Bozzon <br /> In IEEE Access Volume 11 p.125616-125630 (2023).'
+      },
+      {
+        title: 'Optimizing ML Inference Queries Under Constraints',
+        description: 'Ziyu Li, Wenbo Sun, Rihan Hai, Alessandro Bozzon, Asterios Katsifodimos <br /> In International Conference on Web Engineering p.51-66 (2023).'
+      },
+      {
+        title: 'Optimizing Machine Learning Inference Queries for Multiple Objectives',
+        description: 'Ziyu Li, Mariette Schonfeld, Rihan Hai, Alessandro Bozzon, Asterios Katsifodimos <br /> In Proceedings - 2023 IEEE 39th International Conference on Data Engineering Workshops, ICDEW 2023 p.74-78, Institute of Electrical and Electronics Engineers (IEEE) (2023)'
+      },
+      {
+        title: 'Susceptible-infected-spreading-based network embedding in static and temporal networks',
+        description: 'Xiu Xiu Zhan, Ziyu Li, Naoki Masuda, Petter Holme, Huijuan Wang <br /> In EPJ Data Science Volume 9 (2020).'
+      }
+    ]}
+  />
 
   <!-- Content Widget **************** -->
 
