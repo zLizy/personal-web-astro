@@ -22,7 +22,6 @@ const metadata = {
       links={[
         { text: 'Home', href: '#' },
         { text: 'About', href: '#about' },
-        { text: 'Resume', href: '#resume' },
         { text: 'Publications', href: '#publications' },
         { text: 'Projects', href: '#project' },
         { text: 'Blog', href: '#blog' },
@@ -115,6 +114,13 @@ const metadata = {
     items={[
       {
         callToAction:{
+          text:'Model Selection with Model Zoo via Graph Learning',
+          href: 'amalur',
+        },
+        description: '<strong> Ziyu Li </strong>, Hilco van der Wilk, Danning Zhan, Megha Khosla, Alessandro Bozzon, Rihan Hai <br \> In Proceedings of the 2024 IEEE 40th International Conference on Data Engineering, ICDE 2024',
+      },
+      {
+        callToAction:{
           text:'Amalur: the Convergence of Data Integration and Machine Learning',
           href: 'amalur',
         },
@@ -172,19 +178,19 @@ const metadata = {
       {
         title: 'Description:',
         description:
-          'Developed a comprehensive brand identity for a tech startup, Tech Innovators, specializing in disruptive innovations. The goal was to convey a modern yet approachable image that resonated with both corporate clients and tech enthusiasts.',
+          ' In this study, we introduce TransferGraph, a novel framework that reformulates model selection as a graph learning problem. TransferGraph constructs a graph using extensive metadata extracted from models and datasets, while capturing their inherent relationships. ',
       },
       {
-        title: 'Role:',
+        title: 'Effectiveness:',
         description:
-          'Led the entire branding process from concept to execution. Created a dynamic logo that symbolized innovation, selected a vibrant color palette, and I designed corporate stationery, website graphics, and social media assets.',
+          'Through comprehensive experiments across 16 real datasets, both images and texts, we demonstrate TransferGraph’s effectiveness in capturing essential model-dataset relationships, yielding up to a 32% improvement in correlation between predicted performance and the actual fine-tuning results compared to the state-of-the-art methods',
       },
     ]}
     image={{
       src: '~/assets/images/model-selection.png',
       alt: 'Tech Design Image',
-      width: '150',
-      height: '100'
+      width: '380',
+      height: '150'
     }}
     callToAction={{
       target: '_blank',
@@ -195,8 +201,7 @@ const metadata = {
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        <span class="text-2xl">Model Selection with Model Zoo via Graph
-Learning</span>
+        <span class="text-2xl">Model Selection with Model Zoo via Graph Learning</span>
       </h3>
     </Fragment>
 
