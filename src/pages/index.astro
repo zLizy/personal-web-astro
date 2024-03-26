@@ -24,9 +24,9 @@ const metadata = {
         { text: 'About', href: '#about' },
         { text: 'Resume', href: '#resume' },
         { text: 'Publications', href: '#publications' },
-        { text: 'Porfolio', href: '#porfolio' },
+        { text: 'Projects', href: '#project' },
         { text: 'Blog', href: '#blog' },
-        { text: 'Github', href: 'https://github.com/onwidget' },
+        { text: 'Github', href: 'https://github.com/zLizy' },
       ]}
       actions={[
         {
@@ -104,69 +104,7 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- Steps Widget ****************** -->
-
-  <Steps
-    id="resume"
-    title="Work experience"
-    items={[
-      {
-        title:
-          'Graphic Designer <br /> <span class="font-normal">ABC Design Studio, New York, NY</span> <br /> <span class="text-sm font-normal">2021 - Present</span>',
-        description: `Collaborate with clients to understand design requirements and objectives. <br /> Develop branding solutions, including logos, color palettes, and brand guidelines. <br /> Design marketing materials such as brochures, posters, and digital assets. <br /> Create visually appealing user interfaces for websites and applications.`,
-        icon: 'tabler:briefcase',
-      },
-      {
-        title:
-          'Junior Graphic Designer <br /> <span class="font-normal">XYZ Creative Agency, Los Angeles, CA</span> <br /> <span class="text-sm font-normal">2018 - 2021</span>',
-        description: `Assisted senior designers in creating design concepts and visual assets. <br /> Contributed to the development of brand identities and marketing collateral. <br /> Collaborated with the marketing team to ensure consistent design across campaigns. <br /> Gained hands-on experience in various design software and tools.`,
-        icon: 'tabler:briefcase',
-      },
-    ]}
-    classes={{ container: 'max-w-3xl' }}
-  />
-
-  <!-- Steps Widget ****************** -->
-
-  <Steps
-    id="resume"
-    title="Education"
-    items={[
-      {
-        title: `Master of Fine Arts in Graphic Design <br /> <span class="font-normal">New York University's School of Design</span> <br /> <span class="text-sm font-normal">2018 - 2020</span>`,
-        icon: 'tabler:school',
-      },
-      {
-        title: `Bachelor of Arts in Graphic Design <br /> <span class="font-normal">New York University's School of Design</span> <br /> <span class="text-sm font-normal">2014 - 2018</span>`,
-        icon: 'tabler:school',
-      },
-    ]}
-    classes={{ container: 'max-w-3xl' }}
-  />
-
-  <!-- Features3 Widget ************** -->
-
-  <Features3
-    title="Skills"
-    subtitle="Discover the proficiencies that allow me to bring imagination to life through design."
-    columns={3}
-    defaultIcon="tabler:point-filled"
-    items={[
-      {
-        title: 'Graphic design',
-        description: 'Proficient in crafting visually appealing designs that convey messages effectively.',
-      },
-      {
-        title: 'Branding and identity',
-        description: 'Skilled at developing cohesive brand identities, including logos and brand guidelines.',
-      },
-      {
-        title: 'User-centered design',
-        description: 'Experienced in creating user-friendly interfaces and optimizing user experiences.',
-      },
-    ]}
-  />
-
+  
   <!-- Content Widget **************** -->
 
 
@@ -174,8 +112,17 @@ const metadata = {
     id="publications"
     title="Publications"
     columns={1}
-    defaultIcon="tabler:chevron-right"
     items={[
+      {
+        callToAction:{
+          text:'Amalur: the Convergence of Data Integration and Machine Learning',
+          href: 'amalur',
+        },
+        paperurl: {
+          href: 'https://ieeexplore.ieee.org/abstract/document/10412203',
+        },
+        description: '<strong> Ziyu Li</strong>, Wenbo Sun, Danning Zhan, Yan Kang, Lydia Chen, Alessandro Bozzon, and Rihan Hai. <br /> IEEE Transactions on Knowledge and Data Engineering (2024).'
+      },
       {
         callToAction: {
           target: '_blank',
@@ -192,12 +139,12 @@ const metadata = {
         description: 'Rihan Hai, Christos Koutras, Andra Ionescu, <strong>Ziyu Li</strong>, Wenbo Sun, Jessie van Schijndel, Yan Kang, Asterios Katsifodimos <br /> In Proceedings of the 2023 IEEE 39th International Conference on Data Engineering, ICDE 2023 p.3729-3739, IEEE .',
       },
       {
-        title: 'Macaroni: Crawling and Enriching Metadata from Public Model Zoos',
-        description: '<strong>Ziyu Li</strong>, Rihan Hai, Asterios Katsifodimos, Alessandro Bozzon <br /> In International Conference on Web Engineering p.376-380. (2023) ',
-      },
-      {
         title: 'Metadata Representations for Queryable Repositories of Machine Learning Models',
         description: 'Ziyu Li, Henk Kant, Rihan Hai, Asterios Katsifodimos, Marco Brambilla, Alessandro Bozzon <br /> In IEEE Access Volume 11 p.125616-125630 (2023).'
+      },
+      {
+        title: 'Macaroni: Crawling and Enriching Metadata from Public Model Zoos',
+        description: '<strong>Ziyu Li</strong>, Rihan Hai, Asterios Katsifodimos, Alessandro Bozzon <br /> In International Conference on Web Engineering p.376-380. (2023) ',
       },
       {
         title: 'Optimizing ML Inference Queries Under Constraints',
@@ -215,11 +162,11 @@ const metadata = {
   />
 
   <!-- Content Widget **************** -->
+  <!--subtitle="Embark on a design journey that surpasses pixels, entering a realm of imagination. Explore my portfolio, where passion and creativity converge to shape enthralling visual narratives."-->
 
   <Content
-    id="porfolio"
-    title="Elevating visual narratives"
-    subtitle="Embark on a design journey that surpasses pixels, entering a realm of imagination. Explore my portfolio, where passion and creativity converge to shape enthralling visual narratives."
+    id="project"
+    title="Projects"
     isReversed
     items={[
       {
@@ -234,8 +181,10 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1658248165252-71e116af1b34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80',
+      src: '~/assets/images/model-selection.png',
       alt: 'Tech Design Image',
+      width: '150',
+      height: '100'
     }}
     callToAction={{
       target: '_blank',
@@ -246,7 +195,8 @@ const metadata = {
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 1: <br /><span class="text-2xl">Brand identity for tech innovators</span>
+        <span class="text-2xl">Model Selection with Model Zoo via Graph
+Learning</span>
       </h3>
     </Fragment>
 
@@ -262,12 +212,12 @@ const metadata = {
     isAfterContent={true}
     items={[
       {
-        title: 'Description:',
+        // title: 'Description:',
         description:
-          'Designed a captivating event poster for an art and music festival, "ArtWave Fusion," aiming to showcase the synergy between visual art and music genres.',
+          'In this study, we introduce TransferGraph, a novel framework that reformulates model selection as a graph learning problem. TransferGraph constructs a graph using extensive metadata extracted from models and datasets, while capturing their inherent relationships. ',
       },
       {
-        title: 'Role:',
+        // title: 'Role:',
         description: `Translated the festival's creative theme into a visually striking poster. Used bold typography, vibrant colors, and abstract elements to depict the fusion of art and music. Ensured the design captured the festival's vibrant atmosphere.`,
       },
     ]}
