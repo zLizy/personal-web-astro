@@ -3,10 +3,12 @@ publishDate: 2023-08-06T00:00:00Z
 title: Amalur
 excerpt: The Convergence of Data Integration an Machin Learning
 image: ~/assets/images/project/amalur-scope.png
+category: project
 tags:
-  - Machine Learning
-  - Data Integration
-  - Federated Learning
+  - machine-learning
+  - data-integration
+  - federated-learning
+  - model-lake
 metadata:
   canonical: https://astrowind.vercel.app/amalur
 ---
