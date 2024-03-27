@@ -68,7 +68,7 @@ const {
           }}
         />
       </div>
-      <div aria-hidden="true" class="mt-10 md:mt-0 md:basis-1/4 self-center">
+      <div aria-hidden="true" class="mt-10 md:mt-0 md:basis-2/5 self-center">
         {
           image && (
             <div class="relative m-auto max-w-4xl">
@@ -76,10 +76,7 @@ const {
                 <Fragment set:html={image} />
               ) : (
                 <Image
-                  class="mx-auto w-full rounded-lg bg-white-500 shadow-lg"
-                  width=90
-                  height=100
-                  layout="responsive"
+                  class="mx-auto w-150 h-full rounded-lg bg-white-500 shadow-lg"
                   {...(image as any)}
                 />
                 <!-- width={500} height={500} widths={[400, 768]} sizes="(max-width: 768px) 50vw, 232px"-->
