@@ -36,7 +36,7 @@ const {
       {items.map(({ title, description, image, icon, paperurl,blogurl, callToAction, classes: itemClasses = {} }) => (
         <div>
           <div class={twMerge('flex flex-row max-w-md', panelClass, itemClasses?.panel)}>
-             <div class="flex md:basis-1/7">
+             <div class="flex md:basis-1/7 self-center">
              {defaultIcon && (
               <Button variant="link" {...blogurl}>
               <Icon
@@ -47,8 +47,8 @@ const {
               )}
              {image && (
               <Image
-                  class="h-90 w-full rounded-lg bg-white-500 shadow-lg"
-                  width=99%
+                  class="h-100 w-full rounded-lg bg-white-500 shadow-lg"
+                  width=120%
                   {...(image as any)}
                 />
               )}
