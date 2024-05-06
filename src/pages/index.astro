@@ -31,7 +31,7 @@ const metadata = {
       actions={[
         {
           text: 'CV',
-          href: '~/assets/file/ziyu_cv_en.pdf',
+          href: 'src/assets/file/ziyu_cv_en.pdf',
         },
       ]}
       isSticky
@@ -73,6 +73,14 @@ const metadata = {
           href: 'https://www.linkedin.com/in/ziyu-li-85b93213a/',
         },
       },
+      {
+        icon: 'tabler:brand-github',
+        callToAction: {
+          target: '_blank',
+          text: 'Github',
+          href: 'https://www.linkedin.com/in/ziyu-li-85b93213a/',
+        },
+      },
     ]}
     image={{
       src: 'https://www.wis.ewi.tudelft.nl/assets/img/people/ziyu_li.jpg',
@@ -84,11 +92,13 @@ const metadata = {
     <Fragment slot="content">
       <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h2>
       <p>
-        I am a PhD student at the Web Information Systems group, Department of Software Technology, Faculty of EEMCS, Delft University of Technology. The PhD project belongs to the HyperEdge project with Cognizant. I’m supervised by Alessandro Bozzon and Asterios Katsifodimos. 
+        I am a PhD student at the Web Information Systems group, Department of Software Technology, Faculty of EEMCS, Delft University of Technology. 
+        The PhD project belongs to the HyperEdge project with Cognizant. I’m supervised by Alessandro Bozzon<a href="https://www.alessandrobozzon.com/"> and Asterios Katsifodimos<a href="https://asterios.katsifodimos.com/">. 
       </p>
       <br />
       <p>
-        My research lies at the intersection of Machine Learning and data analysis. In particular, my reserach investigates how to apply metadata of different artifacts (e.g., model, data, hardware settings) to improve the effectiveness and efficiency of machine learning workflows. 
+        My research lies at the intersection of Machine Learning and data analysis. 
+        In particular, my reserach investigates how to apply metadata of different artifacts (e.g., model, data, hardware settings) to improve the effectiveness and efficiency of machine learning workflows. 
       </p>
     </Fragment>
 
@@ -127,7 +137,7 @@ const metadata = {
         },
         blogurl: {
           href:'amalur',
-        }
+        },
         image:{
           src: '~/assets/images/tkde.png',
           alt: 'Colorful Image',
